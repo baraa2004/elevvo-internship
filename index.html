@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baraa Magdy | Portfolio</title>
+  <meta name="description" content="Portfolio of Baraa Magdy, junior web developer and Computer Engineering student in Cairo, Egypt.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #111;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    a { color: #111; }
+    a:hover { color: #555; }
+
+    .container { max-width: 760px; margin: 0 auto; padding: 56px 24px 40px; }
+
+    header { text-align: center; padding-bottom: 28px; border-bottom: 1px solid #111; }
+    header h1 { font-size: 2.2rem; letter-spacing: -0.5px; }
+    .role { font-size: 1.05rem; color: #444; margin-top: 4px; }
+    .contact { margin-top: 14px; font-size: 0.95rem; }
+    .contact a, .contact span { margin: 0 8px; white-space: nowrap; }
+
+    section { margin-top: 40px; }
+    h2 {
+      font-size: 1.15rem;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 18px;
+    }
+    h3 { font-size: 1rem; }
+    .group-label { font-size: 0.85rem; color: #555; text-transform: uppercase; letter-spacing: 0.6px; margin: 22px 0 10px; }
+    .group-label:first-of-type { margin-top: 0; }
+
+    .projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+    .card { border: 1px solid #ddd; border-radius: 6px; padding: 16px; display: flex; flex-direction: column; }
+    .card p { font-size: 0.93rem; color: #333; margin: 6px 0 12px; flex: 1; }
+    .meta { font-size: 0.8rem; color: #666; }
+    .card a.btn {
+      align-self: flex-start;
+      font-size: 0.88rem;
+      text-decoration: none;
+      border: 1px solid #111;
+      border-radius: 4px;
+      padding: 4px 12px;
+    }
+    .card a.btn:hover { background: #111; color: #fff; }
+
+    .list { list-style: none; }
+    .list li { display: flex; justify-content: space-between; gap: 16px; padding: 6px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.95rem; }
+    .list li:last-child { border-bottom: none; }
+    .list .year { color: #666; white-space: nowrap; }
+
+    .skills p { font-size: 0.95rem; margin-bottom: 6px; }
+
+    footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid #ddd; text-align: center; font-size: 0.85rem; color: #666; }
+
+    @media (max-width: 520px) {
+      .container { padding-top: 36px; }
+      header h1 { font-size: 1.8rem; }
+      .list li { flex-direction: column; gap: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Baraa Magdy</h1>
+      <p class="role">Junior Web Developer &middot; Computer Engineering Student</p>
+      <p class="contact">
+        <span>Cairo, Egypt</span>
+        <a href="mailto:baraamagdyzaki1@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/baraa-selim-531684321" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/baraa2004" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        I'm a Computer Engineering student at Modern Academy (graduating 2027), focused on frontend web development
+        with HTML, CSS and JavaScript. I completed the Elevvo frontend internship, where I built the websites below,
+        and AI &amp; Data Science training at AMIT. I'm currently learning React.
+      </p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <p class="group-label">Frontend &middot; Elevvo Internship (Nov 2026)</p>
+      <div class="projects">
+        <div class="card">
+          <h3>TaskFlow</h3>
+          <p>One-page marketing website for a task management app, with features, reviews and pricing sections.</p>
+          <a class="btn" href="task-3-taskflow/">View live</a>
+        </div>
+        <div class="card">
+          <h3>CodeNest</h3>
+          <p>SaaS landing page for a demo AI coding assistant, with features, testimonials and pricing plans.</p>
+          <a class="btn" href="task-5-codenest/">View live</a>
+        </div>
+        <div class="card">
+          <h3>Personal Blog</h3>
+          <p>Blog website with category navigation for tech, travel and food posts.</p>
+          <a class="btn" href="task-4-blog/">View live</a>
+        </div>
+      </div>
+
+      <p class="group-label">Python &amp; Data</p>
+      <div class="projects">
+        <div class="card">
+          <h3>Fire, People &amp; AI-Generated Footage Detector</h3>
+          <span class="meta">Team project &middot; 2026</span>
+          <p>Web app that checks uploaded videos for fire, people near the fire and AI-generated footage. Built with Python, FastAPI, Streamlit, OpenCV, YOLOv8 and TensorFlow.</p>
+          <a class="btn" href="https://github.com/baraa2004/fire-people-detector" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+        <div class="card">
+          <h3>Loan Default Prediction</h3>
+          <span class="meta">Team project &middot; 2024</span>
+          <p>Machine learning model to predict loan default, built in Python with Pandas.</p>
+          <a class="btn" href="https://www.kaggle.com/code/malkemad/loan-default" target="_blank" rel="noopener">View on Kaggle</a>
+        </div>
+        <div class="card">
+          <h3>Nursery Management Database</h3>
+          <span class="meta">2026</span>
+          <p>Relational database for managing a nursery, designed and implemented in SQL.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <p><strong>Web &amp; Mobile:</strong> HTML, CSS, JavaScript, Flutter (currently learning React)</p>
+      <p><strong>Programming:</strong> Python, C++</p>
+      <p><strong>Data &amp; AI:</strong> Pandas, NumPy, OpenCV</p>
+      <p><strong>Databases &amp; Tools:</strong> SQL, Database Design, GitHub, VS Code</p>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul class="list">
+        <li><a href="https://lnkd.in/p/ewTWtXid" target="_blank" rel="noopener">Frontend Web Development Internship, Elevvo</a><span class="year">2026</span></li>
+        <li><a href="https://www.linkedin.com/posts/baraa-selim-531684321_im-excited-to-share-that-ive-successfully-activity-7350624809355026432-vT9R" target="_blank" rel="noopener">Advanced Machine Learning Diploma, AMIT Learning</a><span class="year">2025</span></li>
+        <li><a href="https://www.linkedin.com/posts/baraa-selim-531684321_machinelearning-ai-datascience-activity-7486588892066877440-i-kW" target="_blank" rel="noopener">AI &amp; Data Science Diploma, AMIT Learning</a><span class="year">2026</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul class="list">
+        <li><span><strong>B.Sc. in Electrical Engineering &ndash; Computer Engineering</strong><br>Modern Academy for Engineering and Technology</span><span class="year">2022 &ndash; 2027</span></li>
+      </ul>
+    </section>
+
+    <footer>&copy; 2026 Baraa Magdy</footer>
+  </div>
+</body>
+</html>
